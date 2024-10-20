@@ -1,0 +1,118 @@
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 1000;
+
+
+    .left{
+        z-index: 1000;
+
+        a{
+            cursor: pointer;
+            h1{
+                color: #52b788;
+                
+            }
+
+        }
+        
+        font-style: italic;
+    }
+
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1000;
+        
+        
+
+        a{
+            color: #ced4da;
+            font-weight: 400;
+            letter-spacing: 5px;
+            cursor: pointer;
+            
+
+            &:hover{
+                color: #52b788;
+                transition: all ease-in-out 200ms;
+            }
+        }
+
+        .btnNav{
+            border: 1px solid #52b788;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 7px 10px;
+            color: #52b788;
+            cursor: pointer;
+            letter-spacing: 2px;
+          
+          
+            &:hover{
+                transition: all ease-in-out 150ms;
+                color: #ced4da;
+                background-color: #52b788;;
+                scale: (1.03);
+            }
+          }
+
+        
+        
+
+        @media (max-width: 800px) {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+            background-color: #022954;
+            height: 100%;
+            //left: 50%;
+            right: 100%;
+            width: 50%;
+            top: 0;
+            opacity: 0;
+            transition: all ease-in-out 300ms;
+            z-index: 1000;
+        }
+
+        .close{
+            cursor: pointer;
+            position: absolute;
+            top: 0.7rem;
+            align-self: flex-end;
+            padding-right: 2rem;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    .dropdown{
+        opacity: 1;
+        left: 50%;
+        transition: all ease-in-out 300ms;
+        z-index: 1000;
+        height: 100vh;
+        position: fixed;
+    }
+
+    
+
+    .hamburger{
+        display: none;
+        cursor: pointer;
+        z-index: 1000;
+        
+
+        @media (max-width: 800px) {
+            display: block;
+        }
+    }
+}

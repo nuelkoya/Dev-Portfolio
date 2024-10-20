@@ -1,0 +1,173 @@
+.project{
+    max-width: 1450px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+
+    h1{
+        text-align: center;
+        color: #52b788;
+        font-style: italic;
+        padding-bottom: 2rem;
+    }
+    
+
+    .projectCard{
+        max-width: 1000px;
+        height: 22rem;
+        
+        
+        
+        
+        
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        display: flex;
+
+        .projectDesc{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.5rem;
+            border-top-left-radius: 50px;
+            background-color: #d8e0e7;
+            
+
+            .projectDescTop{
+
+                h2{
+                    color: black;
+                    font-size: 1.4rem;
+
+                    
+                }
+
+                p{
+                    color: black;
+                    line-height: 2rem;
+                   
+                }
+
+            }
+
+            .projectDescBottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+
+                .btn{
+                    border: 1px solid #52b788;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    color: #52b788;
+                    cursor: pointer;
+
+
+                    &:hover{
+                        transition: all ease-in-out 150ms;
+                        color: #ced4da;
+                        background-color: #52b788;;
+                        scale: (1.03);
+                    }
+
+                }
+
+                .githubIcon{
+                    transition: all ease-in-out 200ms;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        color: gray;
+                    }
+                }
+
+            }
+            @media (max-width: 850px) {
+                order: 2;
+                border-right: none;
+                background-color: #d8e0e7;
+                color: black;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 0;
+            }
+
+        }
+
+        .projectImage{
+            flex: 1;
+            position: relative;
+            cursor: pointer;
+            
+            .hue{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: #101b16;
+                opacity: 0.8;
+                z-index: 500;
+                border-bottom-right-radius: 46px;
+                transition: all ease-in-out 200ms;
+
+
+                @media (max-width: 850px) {
+                    border-bottom-right-radius: 0;
+                    
+                }
+
+                &:hover{
+                    background-color: none;
+                    opacity: 0;
+                    
+
+                }
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-bottom-right-radius: 50px;
+                object-position: 0% 0%;
+                
+                
+                @media (max-width: 850px) {
+                    border-bottom-right-radius: 0;
+                    object-position: 0% 0%;
+                }
+              
+            }
+
+            @media (max-width: 850px) {
+                order: 1;
+                height: 60%;
+            }
+        }
+        @media (max-width: 1060px) {
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+
+        }
+
+        @media (max-width: 850px) {
+            flex-direction: column;
+            height: 35rem;
+            margin-bottom: 10rem;
+            border: none;
+            
+            
+        }
+
+        @media (max-width: 550px) {
+            margin-bottom: 15rem;
+        }
+        
+
+        
+    }
+
+}
