@@ -9,7 +9,7 @@ const Hero = () => {
         <p>Hi, my name is</p>
         <h1>Adetola Olukoya.</h1>
         <p className="heroDetail">
-            Creative and detail-oriented front-end developer with a passion for building seamless, 
+            I'm a creative and detail-oriented front-end developer with a passion for building seamless, 
             user-friendly web experiences. Proficient in HTML, CSS, and JavaScript, 
             with experience in modern frameworks like React. 
             Skilled at transforming designs into functional, responsive websites, 
