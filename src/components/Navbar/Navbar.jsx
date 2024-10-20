@@ -67,7 +67,7 @@ const Navbar = forwardRef(({ showDropdown, setShowDropdown, contactTop, projectT
             </div>
             
             <a href="">About</a>
-            <a onClick={()=>handleProjectNav()}>Project</a>
+            <a onClick={()=>handleProjectNav()}>Projects</a>
             <a onClick={()=>handleContactNav()}>Contact</a>
             <a href="https://copper-ardelia-20.tiiny.site/" target="_blank" className="btnNav">Resume</a>
         </div>
